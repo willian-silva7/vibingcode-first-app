@@ -4,118 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShoopingApp</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --bg: #f4f7fb;
-        --panel: #ffffff;
-        --primary: #1d4ed8;
-        --border: #dfe6f1;
-        --text: #172033;
-        --muted: #5f6f87;
-        --success: #0f766e;
-        --error: #b91c1c;
-      }
-
-      * { box-sizing: border-box; }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: linear-gradient(180deg, #eef4ff, var(--bg));
-        font-family: Arial, Helvetica, sans-serif;
-        color: var(--text);
-      }
-
-      .card {
-        width: min(90vw, 560px);
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 18px;
-        box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
-        padding: 32px;
-      }
-
-      h1 {
-        margin: 0 0 10px;
-        font-size: clamp(1.8rem, 3vw, 2.4rem);
-      }
-
-      p {
-        margin: 0 0 20px;
-        color: var(--muted);
-        line-height: 1.5;
-      }
-
-      label {
-        display: block;
-        font-weight: 700;
-        margin-bottom: 8px;
-      }
-
-      textarea {
-        width: 100%;
-        min-height: 130px;
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        resize: vertical;
-        font: inherit;
-        padding: 14px 16px;
-        color: var(--text);
-      }
-
-      textarea:focus {
-        outline: 2px solid rgba(29, 78, 216, 0.15);
-        border-color: var(--primary);
-      }
-
-      button {
-        margin-top: 18px;
-        width: 100%;
-        border: none;
-        border-radius: 12px;
-        background: var(--primary);
-        color: white;
-        padding: 14px 18px;
-        font-size: 1rem;
-        font-weight: 700;
-        cursor: pointer;
-      }
-
-      button:hover {
-        opacity: 0.96;
-      }
-
-      .result {
-        margin-top: 22px;
-        min-height: 28px;
-        font-size: 1.05rem;
-        font-weight: 700;
-        color: var(--success);
-      }
-
-      .result.error {
-        color: var(--error);
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="card">
-      <h1>ShoopingApp</h1>
-      <p>Insert one or more words or letters to help find the matching user name.</p>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <div class="brand">FRUIT SHOP</div>
 
-      <form id="discover-form">
-        <label for="words-input">Words to analyze</label>
-        <textarea id="words-input" placeholder="Example: nailw, wil&#10;or&#10;apple"></textarea>
-        <button type="submit">Discover name</button>
-      </form>
+        <nav class="nav" aria-label="Main menu">
+          <button class="nav-button active" type="button" data-page="products">Products</button>
+          <button class="nav-button" type="button" data-page="details">Product Details</button>
+          <button class="nav-button" type="button" data-page="cart">Shopping Cart</button>
+          <button class="nav-button" type="button" data-page="checkout">Checkout</button>
+        </nav>
 
-      <div id="result" class="result" aria-live="polite"></div>
-    </main>
+        <div class="sidebar-meta" aria-label="Store summary">
+          <span>10 fruits</span>
+          <span>Fresh delivery</span>
+          <span>Seasonal picks</span>
+        </div>
+      </aside>
 
-    <script src="./discoverUserName.js"></script>
-    <script src="./discoverUserNamePage.js"></script>
+      <main class="content">
+        <div id="page-root" aria-live="polite"></div>
+      </main>
+    </div>
+
+    <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="app.js"></script>
   </body>
 </html>

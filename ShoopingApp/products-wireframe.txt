@@ -1,0 +1,28 @@
+Products Page
+
+┌──────────────────────────────────────────────────────────────┐
+│ [Sidebar: Products | Product Details | Shopping Cart | Checkout] │
+├──────────────────────────────────────────────────────────────┤
+│ Products                                                    │
+│                                                              │
+│ ┌───────────────┐  ┌───────────────┐  ┌───────────────┐    │
+│ │ 🍎 Apple      │  │ 🍌 Banana     │  │ 🍊 Orange     │    │
+│ │ $1.25 / lb    │  │ $0.75 / bunch │  │ $1.10 / item │    │
+│ │ Qty: [1]      │  │ Qty: [2]      │  │ Qty: [1]      │    │
+│ │ [Add to Cart] │  │ [Add to Cart] │  │ [Add to Cart] │    │
+│ └───────────────┘  └───────────────┘  └───────────────┘    │
+│                                                              │
+│ ┌───────────────┐  ┌───────────────┐  ┌───────────────┐    │
+│ │ 🍓 Strawberry │  │ 🥭 Mango      │  │ 🍍 Pineapple  │    │
+│ │ $2.50 / box   │  │ $1.80 / item  │  │ $3.25 / item │    │
+│ │ Qty: [1]      │  │ Qty: [1]      │  │ Qty: [1]      │    │
+│ │ [Add to Cart] │  │ [Add to Cart] │  │ [Add to Cart] │    │
+│ └───────────────┘  └───────────────┘  └───────────────┘    │
+│                                                              │
+│ ... continues with remaining fruit products ...             │
+└──────────────────────────────────────────────────────────────┘
+
+Notes:
+- Each product card shows an emoji image, name, price, quantity selector, and Add to Cart button.
+- Page should support browsing the 10 fruit products.
+- Layout adapts to desktop and mobile widths.

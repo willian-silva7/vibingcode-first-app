@@ -1,0 +1,23 @@
+Product Details Page
+
+┌──────────────────────────────────────────────────────────────┐
+│ [Sidebar: Products | Product Details | Shopping Cart | Checkout] │
+├──────────────────────────────────────────────────────────────┤
+│ Product Details                                             │
+│                                                              │
+│ ┌────────────────────────────────────────────────────────┐   │
+│ │ 🍎                                                    │   │
+│ │ Apple                                                 │   │
+│ │ Description: Crisp, sweet, and perfect for snacking. │   │
+│ │ Price: $1.25 per lb                                   │   │
+│ │ Qty: [1]  [Add to Cart]                              │   │
+│ │                                                       │   │
+│ │ [Back to Products]                                    │   │
+│ └────────────────────────────────────────────────────────┘   │
+└──────────────────────────────────────────────────────────────┘
+
+Notes:
+- Selected product is displayed in detail.
+- User can return to the Product list.
+- Price and description are visible and easy to read.
+- Optional add-to-cart action appears on the page.

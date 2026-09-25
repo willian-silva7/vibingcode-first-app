@@ -1,0 +1,31 @@
+Expanded Navigation (desktop / wide screens)
+
+┌──────────────────────────────────────────────┐
+│ FRUIT SHOP                                  │
+├──────────────────────────────────────────────┤
+│ Products                                    │
+│ Product Details                             │
+│ Shopping Cart                               │
+│ Checkout                                    │
+├──────────────────────────────────────────────┤
+│ 10 fruits                                   │
+│ Fresh delivery                              │
+│ Seasonal picks                              │
+└──────────────────────────────────────────────┘
+
+Collapsed Navigation (narrow screens, under 300px)
+
+┌──────────────┐
+│ F            │
+├──────────────┤
+│ P            │
+│ PD           │
+│ SC           │
+│ Ch           │
+└──────────────┘
+
+Suggested mapping:
+- Products = P
+- Product Details = PD
+- Shopping Cart = SC
+- Checkout = Ch

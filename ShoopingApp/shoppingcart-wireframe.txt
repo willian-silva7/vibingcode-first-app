@@ -1,0 +1,24 @@
+Shopping Cart Page
+
+┌──────────────────────────────────────────────────────────────┐
+│ [Sidebar: Products | Product Details | Shopping Cart | Checkout] │
+├──────────────────────────────────────────────────────────────┤
+│ Shopping Cart                                               │
+│                                                              │
+│ ┌────────────────────────────────────────────────────────────┐ │
+│ │ 🍎 Apple            Qty: [2]  Price: $2.50   [Update]   │ │
+│ │ 🍌 Banana           Qty: [1]  Price: $0.75   [Update]   │ │
+│ │ 🍊 Orange           Qty: [3]  Price: $3.30   [Update]   │ │
+│ │ ...                                                     │ │
+│ └────────────────────────────────────────────────────────────┘ │
+│                                                              │
+│ Subtotal: $6.55                                             │
+│ Total: $6.55                                                │
+│ [Continue to Checkout]                                      │
+└──────────────────────────────────────────────────────────────┘
+
+Notes:
+- Each cart row shows product name, quantity, and total.
+- User can update quantities and remove items.
+- Total updates dynamically.
+- Continue-to-checkout action is clearly visible.
