@@ -1,0 +1,23 @@
+Checkout Page
+
+┌──────────────────────────────────────────────────────────────┐
+│ [Sidebar: Products | Product Details | Shopping Cart | Checkout] │
+├──────────────────────────────────────────────────────────────┤
+│ Checkout                                                    │
+│                                                              │
+│ Order Summary                                               │
+│ ┌────────────────────────────────────────────────────────────┐ │
+│ │ 🍎 Apple      Qty: 2   Price: $2.50                     │ │
+│ │ 🍌 Banana     Qty: 1   Price: $0.75                     │ │
+│ │ 🍊 Orange     Qty: 3   Price: $3.30                     │ │
+│ └────────────────────────────────────────────────────────────┘ │
+│                                                              │
+│ Total: $6.55                                                │
+│                                                              │
+│ [Process Order]                                             │
+└──────────────────────────────────────────────────────────────┘
+
+Notes:
+- Shows purchased products and final total.
+- Page highlights order summary and main action button.
+- A basic order completion flow is represented for the prototype.
