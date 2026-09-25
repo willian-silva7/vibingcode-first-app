@@ -240,8 +240,8 @@ function renderProductsPage() {
                   </select>
                 </div>
                 <div class="product-actions">
-                  <button class="secondary-button" type="button" data-detail-id="${product.id}">View Details</button>
-                  <button class="primary-button" type="button" data-add-id="${product.id}">Add to Cart</button>
+                  <button class="secondary-button" type="button" data-detail-id="${product.id}" title="View details for ${product.name}">View Details</button>
+                  <button class="primary-button" type="button" data-add-id="${product.id}" title="Add ${product.name} to cart">Add to Cart</button>
                 </div>
               </article>
             `
@@ -278,10 +278,10 @@ function renderDetailsPage() {
                   .join('')}
               </select>
             </label>
-            <button class="primary-button" type="button" data-add-id="${product.id}">Add to Cart</button>
+            <button class="primary-button" type="button" data-add-id="${product.id}" title="Add ${product.name} to cart">Add to Cart</button>
           </div>
 
-          <button class="ghost-button" type="button" data-page="products">Back to Products</button>
+          <button class="ghost-button" type="button" data-page="products" title="Return to the products list">Back to Products</button>
         </div>
       </article>
     </section>
@@ -300,7 +300,7 @@ function renderCartPage() {
         <div class="empty-state">
           <h2>Your cart is empty</h2>
           <p>Add fresh fruit from the products page to begin your order.</p>
-          <button class="primary-button" type="button" data-page="products">Continue Shopping</button>
+          <button class="primary-button" type="button" data-page="products" title="Return to the products list">Continue Shopping</button>
         </div>
       </section>
     `;
@@ -327,11 +327,11 @@ function renderCartPage() {
 
                 <div class="cart-item-controls">
                   <div class="qty-stepper" aria-label="Quantity controls for ${item.name}">
-                    <button type="button" data-adjust-quantity="${item.id}" data-delta="-1">-</button>
+                    <button type="button" data-adjust-quantity="${item.id}" data-delta="-1" title="Decrease quantity of ${item.name}">-</button>
                     <span>${item.quantity}</span>
-                    <button type="button" data-adjust-quantity="${item.id}" data-delta="1">+</button>
+                    <button type="button" data-adjust-quantity="${item.id}" data-delta="1" title="Increase quantity of ${item.name}">+</button>
                   </div>
-                  <button class="danger-button" type="button" data-remove-id="${item.id}">Remove</button>
+                  <button class="danger-button" type="button" data-remove-id="${item.id}" title="Remove ${item.name} from cart">Remove</button>
                 </div>
               </div>
             `
@@ -345,7 +345,7 @@ function renderCartPage() {
       </div>
 
       <div class="checkout-actions">
-        <button class="primary-button" type="button" data-page="checkout">Continue to Checkout</button>
+        <button class="primary-button" type="button" data-page="checkout" title="Continue to checkout">Continue to Checkout</button>
       </div>
     </section>
   `;
@@ -363,7 +363,7 @@ function renderCheckoutPage() {
         <div class="empty-state">
           <h2>No order to process</h2>
           <p>Your cart is empty. Add products before checking out.</p>
-          <button class="primary-button" type="button" data-page="products">Go to Products</button>
+          <button class="primary-button" type="button" data-page="products" title="Return to the products list">Go to Products</button>
         </div>
       </section>
     `;
@@ -398,7 +398,7 @@ function renderCheckoutPage() {
         </div>
 
         <div class="checkout-actions">
-          <button class="primary-button" type="button" data-process-order="true">Process Order</button>
+          <button class="primary-button" type="button" data-process-order="true" title="Place your order and complete checkout">Process Order</button>
         </div>
       </div>
     </section>
