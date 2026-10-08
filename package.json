@@ -1,0 +1,25 @@
+{
+  "name": "codespaces-blank",
+  "version": "1.0.0",
+  "description": "![License: MIT](https://img.shields.io/badge/License-MIT-green.svg) ![Status](https://img.shields.io/badge/Status-Prototype-orange.svg) ![Frontend](https://img.shields.io/badge/Stack-HTML%20%7C%20CSS%20%7C%20JavaScript-blue.svg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willian-silva7/vibingcode-first-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/willian-silva7/vibingcode-first-app/issues"
+  },
+  "homepage": "https://github.com/willian-silva7/vibingcode-first-app#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "http-server": "^14.1.1"
+  }
+}

@@ -177,7 +177,7 @@ function addToCart(productId, quantity = 1) {
   state.orderConfirmation = '';
   state.page = 'cart';
   showToast(`${product.name} added to cart.`, 'info');
-  render();
+  renderPage();
 }
 
 function changeCartQuantity(productId, delta) {
@@ -189,7 +189,7 @@ function changeCartQuantity(productId, delta) {
     state.cart = state.cart.filter((entry) => entry.id !== productId);
   }
 
-  render();
+  renderPage();
 }
 
 function removeCartItem(productId) {
@@ -198,7 +198,7 @@ function removeCartItem(productId) {
   if (item) {
     showToast(`${item.name} removed from cart.`, 'info');
   }
-  render();
+  renderPage();
 }
 
 function handleProcessOrder() {
@@ -207,7 +207,7 @@ function handleProcessOrder() {
   state.page = 'products';
   state.orderConfirmation = `Thank you! Your order for ${formatCurrency(total)} has been placed successfully.`;
   showToast('Thank you! Your order has been placed successfully.', 'success');
-  render();
+  renderPage();
 }
 
 function renderProductsPage() {
