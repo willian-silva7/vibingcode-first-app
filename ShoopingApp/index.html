@@ -16,6 +16,7 @@
           <button class="nav-button" type="button" data-page="details" title="View the selected product details">Product Details</button>
           <button class="nav-button" type="button" data-page="cart" title="Review and adjust your shopping cart">Shopping Cart</button>
           <button class="nav-button" type="button" data-page="checkout" title="Proceed to checkout">Checkout</button>
+          <button class="nav-button" type="button" data-page="review" title="Review feed articles and product price changes">Review</button>
         </nav>
 
         <div class="sidebar-meta" aria-label="Store summary">
@@ -32,6 +33,11 @@
 
     <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
 
+    <script src="vendor/sql.js/sql-wasm.js"></script>
+    <script src="vendor/dompurify/purify.min.js"></script>
+    <script src="review-store.js"></script>
+    <script src="review-feeds.js"></script>
+    <script src="review-page.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

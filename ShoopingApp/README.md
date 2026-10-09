@@ -30,6 +30,7 @@ This project is intended as a front-end prototype for product and UX validation,
 - Responsive desktop and mobile layout
 - Clean storefront styling and interactive UX feedback
 - Fully static front-end implementation with no backend dependency
+- Review Page for RSS/Atom article feeds, explicit product-price follows, and read/unread tracking
 
 ## 🚀 Installation
 
@@ -70,6 +71,17 @@ This project is intended as a front-end prototype for product and UX validation,
 ## ⚙️ Configuration
 
 This project does not require environment variables or external configuration files. It is intentionally designed as a static storefront prototype.
+
+### Review Page
+
+The Review Page can subscribe to RSS 2.0 and Atom 1.0 URLs that allow cross-origin browser
+requests. Add a product ID and USD price to entries using the `vcp` extension described in
+[`specs/001-create-review-page/contracts/feed-format.md`](specs/001-create-review-page/contracts/feed-format.md)
+for price follows to match. Articles, follows, and reading state are stored locally in the
+current browser profile using SQLite in WebAssembly and IndexedDB; they are not synchronized and
+may be removed when browser site data is cleared or evicted. Feed article markup is sanitized
+before display. The Review Page does not use a backend, feed proxy, background refresh, account,
+or notification service.
 
 ### Main customization points
 

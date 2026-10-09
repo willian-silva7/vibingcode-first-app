@@ -80,6 +80,7 @@ const products = [
     description: 'Soft, fragrant, and ideal for fruit salads.'
   }
 ];
+window.StorefrontProducts = products;
 
 const state = {
   page: 'products',
@@ -131,7 +132,8 @@ function renderNav() {
     products: { label: 'Products', short: 'P', icon: '🛒' },
     details: { label: 'Product Details', short: 'PD', icon: '📄' },
     cart: { label: 'Shopping Cart', short: 'SC', icon: '🛍️' },
-    checkout: { label: 'Checkout', short: 'Ch', icon: '💳' }
+    checkout: { label: 'Checkout', short: 'Ch', icon: '💳' },
+    review: { label: 'Review', short: 'R', icon: '📰' }
   };
 
   navButtons.forEach((button) => {
@@ -406,7 +408,9 @@ function renderCheckoutPage() {
 }
 
 function renderPage() {
-  if (state.page === 'products') {
+  if (state.page === 'review') {
+    window.ReviewPage.render(pageRoot);
+  } else if (state.page === 'products') {
     renderProductsPage();
   } else if (state.page === 'details') {
     renderDetailsPage();

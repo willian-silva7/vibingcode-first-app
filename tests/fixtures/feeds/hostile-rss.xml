@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Unsafe Content Test</title>
+    <item>
+      <guid>hostile-article</guid>
+      <title>Article with hostile markup</title>
+      <link>https://news.example.test/hostile</link>
+      <pubDate>Wed, 07 Oct 2026 08:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+        <p onclick="window.__xss = true">Safe <strong>formatting</strong></p>
+        <img src="x" onerror="window.__xss = true">
+        <a href="javascript:window.__xss = true">Unsafe link</a>
+        <a href="mailto:attacker@example.test">Unsafe mail link</a>
+        <script>window.__xss = true</script>
+      ]]></content:encoded>
+    </item>
+  </channel>
+</rss>

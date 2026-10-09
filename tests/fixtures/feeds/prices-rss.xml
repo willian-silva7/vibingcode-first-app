@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:vcp="urn:fruit-storefront:product-price:v1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fruit Price Watch</title>
+    <link>https://feeds.example.test/</link>
+    <description>Test feed with explicit price observations</description>
+    <item>
+      <guid>apple-invalid-precision</guid>
+      <title>Apple invalid precision</title>
+      <link>https://news.example.test/apple-invalid-precision</link>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 GMT</pubDate>
+      <vcp:product-id>apple</vcp:product-id>
+      <vcp:price currency="USD">1.234</vcp:price>
+      <description>Invalid precision must not create a price observation.</description>
+    </item>
+    <item>
+      <guid>apple-baseline</guid>
+      <title>Apple baseline price</title>
+      <link>https://news.example.test/apple-baseline</link>
+      <pubDate>Sun, 04 Oct 2026 08:00:00 GMT</pubDate>
+      <vcp:product-id>apple</vcp:product-id>
+      <vcp:price currency="USD">1.00</vcp:price>
+      <description>Baseline apple price.</description>
+    </item>
+    <item>
+      <guid>apple-old</guid>
+      <title>Apple price before change</title>
+      <link>https://news.example.test/apple-old</link>
+      <pubDate>Mon, 05 Oct 2026 08:00:00 GMT</pubDate>
+      <vcp:product-id>apple</vcp:product-id>
+      <vcp:price currency="USD">1.50</vcp:price>
+      <description>Previous apple price.</description>
+    </item>
+    <item>
+      <guid>banana-no-price</guid>
+      <title>Banana article without product price</title>
+      <link>https://news.example.test/banana</link>
+      <pubDate>Tue, 06 Oct 2026 08:00:00 GMT</pubDate>
+      <description>Ordinary article content.</description>
+    </item>
+    <item>
+      <guid>apple-new</guid>
+      <title>Apple price changed</title>
+      <link>https://news.example.test/apple-new</link>
+      <pubDate>Wed, 07 Oct 2026 08:00:00 GMT</pubDate>
+      <vcp:product-id>apple</vcp:product-id>
+      <vcp:price currency="USD">1.25</vcp:price>
+      <content:encoded><![CDATA[<p>Fresh apples are <strong>on sale</strong>.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

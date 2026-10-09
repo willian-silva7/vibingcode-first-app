@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+  xmlns:vcp="urn:fruit-storefront:product-price:v1">
+  <title>Atom Fruit Watch</title>
+  <id>https://feeds.example.test/atom</id>
+  <entry>
+    <id>atom-apple-entry</id>
+    <title>Atom apple price</title>
+    <link rel="alternate" href="https://news.example.test/atom-apple"/>
+    <published>2026-10-08T09:00:00Z</published>
+    <summary type="html">&lt;p&gt;Atom &lt;em&gt;summary&lt;/em&gt;&lt;/p&gt;</summary>
+    <vcp:product-id>apple</vcp:product-id>
+    <vcp:price currency="USD">1.20</vcp:price>
+  </entry>
+</feed>
