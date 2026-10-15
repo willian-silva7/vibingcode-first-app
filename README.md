@@ -10,6 +10,8 @@ Fruit Storefront Prototype is a lightweight, client-side e-commerce demo designe
 
 This project is intended as a front-end prototype for product and UX validation, without involving a backend, database, payments, or user authentication.
 
+[Watch the Fruit Store tutorial](ShoopingApp/assets/FruitShopSpeedVideo.gif)
+
 ## 📚 Table of Contents
 
 - [Overview](#-description)
